@@ -1,0 +1,36 @@
+{
+  "alunos": [
+    {
+      "nome": "LUCAS EDUARD F CARDOSO",
+      "cpf": "493.363.848-99",
+      "email": "lucaseduard2015@gmail.com",
+      "tel": "11953960490",
+      "id": "586"
+    },
+    {
+      "nome": "LUCAS EDUARD F CARDOSO",
+      "cpf": "493.363.848-99",
+      "email": "29975220@eniac.edu.br",
+      "tel": "11953960494",
+      "id": "10"
+    }
+  ],
+  "livros": [
+    {
+      "titulo": "Joao",
+      "autor": "Coelho",
+      "categoria": "ação",
+      "editora": "ivo",
+      "ano": 1999,
+      "id": "87c6"
+    },
+    {
+      "titulo": "lucas",
+      "autor": "silva",
+      "categoria": "Suspense",
+      "editora": "eu",
+      "ano": 0,
+      "id": "ee43"
+    }
+  ]
+}
