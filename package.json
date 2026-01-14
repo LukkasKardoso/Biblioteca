@@ -1,21 +1,14 @@
 {
-  "dependencies": {
-    "json-server": "^1.0.0-beta.3"
-<<<<<<< HEAD
-  }
-=======
-  },
   "name": "biblioteca-mesttra",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "devDependencies": {},
+  "type": "commonjs",
   "scripts": {
+    "start": "json-server --port 3000 db.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs"
->>>>>>> d123596d9d12d3046635a3d64dc7fad4f2b177fe
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
 }

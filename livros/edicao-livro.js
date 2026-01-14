@@ -7,7 +7,7 @@ if (!id) {
 }
 
 async function carregarLivro() {
-<<<<<<< HEAD
+
     try {
         const response = await fetch(`http://localhost:3000/livros/${id}`);
 
@@ -28,7 +28,7 @@ async function carregarLivro() {
         alert(error.message);
         window.location.href = 'livros.html';
     }
-=======
+
     const response = await fetch(`http://localhost:3000/livros/${id}`);
     const livro = await response.json();
 
@@ -38,14 +38,14 @@ async function carregarLivro() {
     document.getElementById('categoria').value = livro.categoria;
     document.getElementById('editora').value = livro.editora;
     document.getElementById('ano').value = livro.ano;
->>>>>>> d123596d9d12d3046635a3d64dc7fad4f2b177fe
+
 }
 
 async function atualizarLivro(event) {
     event.preventDefault();
 
     const livroAtualizado = {
-<<<<<<< HEAD
+
         titulo: document.getElementById('titulo').value,
         autor: document.getElementById('autor').value,
         categoria: document.getElementById('categoria').value,
@@ -74,22 +74,7 @@ async function atualizarLivro(event) {
     } catch (error) {
         alert(error.message);
     }
-=======
-        titulo: titulo.value,
-        autor: autor.value,
-        categoria: categoria.value,
-        editora: editora.value,
-        ano: ano.value
-    };
-
-    await fetch(`http://localhost:3000/livros/${id}`, {
-        method: 'PUT',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(livroAtualizado)
-    });
-
-    window.location.replace('livros.html');
->>>>>>> d123596d9d12d3046635a3d64dc7fad4f2b177fe
 }
 
-document.addEventListener('DOMContentLoaded', carregarLivro);
+// Carrega os dados do livro ao carregar a página
+window.onload = carregarLivro;

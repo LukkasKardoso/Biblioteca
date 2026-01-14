@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const tabela = document.getElementById('tabelaLivros');
 
 // carregar livros
@@ -36,7 +36,7 @@ async function carregarLivros() {
 
 
 // editar livro
-=======
+
 async function listarLivros() {
     const response = await fetch('http://localhost:3000/livros');
     const livros = await response.json();
@@ -68,12 +68,12 @@ async function listarLivros() {
     });
 }
 
->>>>>>> d123596d9d12d3046635a3d64dc7fad4f2b177fe
+
 function editarLivro(id) {
     window.location.href = `edicao-livro.html?id=${id}`;
 }
 
-<<<<<<< HEAD
+
 // excluir livro
 async function excluirLivro(id) {
     const confirmar = confirm('Tem certeza que deseja excluir este livro?');
@@ -98,7 +98,7 @@ async function excluirLivro(id) {
 }
 
 document.addEventListener('DOMContentLoaded', carregarLivros);
-=======
+
 async function excluirLivro(id) {
     if (!confirm('Deseja realmente excluir este livro?')) return;
 
@@ -110,4 +110,4 @@ async function excluirLivro(id) {
 }
 
 listarLivros();
->>>>>>> d123596d9d12d3046635a3d64dc7fad4f2b177fe
+
